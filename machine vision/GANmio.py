@@ -299,8 +299,6 @@ lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
 # Ottimizzatori con schedulazione del tasso di apprendimento
 #generator_optimizer = tf.keras.optimizers.Adam(learning_rate=lr_schedule)
 #discriminator_optimizer = tf.keras.optimizers.Adam(learning_rate=lr_schedule)
-generator_optimizer = tf.keras.optimizers.Adam(learning_rate=initial_learning_rate)
-discriminator_optimizer = tf.keras.optimizers.Adam(learning_rate=initial_learning_rate)
 
 # Lists to store the generator and discriminator losses during training
 gen_loss_history = []
