@@ -1,3 +1,4 @@
+# Generatore di immagini partendo da un base geotiff
 import cv2
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -14,7 +15,7 @@ print(tf.__version__)
 # Definisci la cartella in cui si trovano i file GeoTIFF
 if False:
 # Replace with the path to your GeoTIFF dataset
-    geo_tiff_dir = r"C:\Users\MICHELE\Desktop\prove\aree\img"
+    geo_tiff_dir = "\aree\img"
 
     def load_and_preprocess_geotiff_images(directory):
         image_tensors = []
@@ -62,12 +63,12 @@ if False:
 #########################################################################################################################
 
 # Definisci il ciclo di allenamento
-EPOCHS = 25
+EPOCHS = 80
 noise_dim = 100
 num_examples_to_generate = 12
 
-BUFFER_SIZE = 20000
-BATCH_SIZE = 28
+BUFFER_SIZE = 29000
+BATCH_SIZE = 50
 
 # Assuming train_images is a numpy array of tensors
 train_images = np.load("images.npy")
