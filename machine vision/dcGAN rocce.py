@@ -28,7 +28,7 @@ set_global_policy(policy)
 
 if False:
 # Replace with the path to your GeoTIFF dataset
-    geo_tiff_dir = r"C:\Users\MICHELE\Desktop\prove\aree\img"
+    geo_tiff_dir = "\aree\img"
 
     def load_and_preprocess_geotiff_images(directory):
         image_tensors = []
